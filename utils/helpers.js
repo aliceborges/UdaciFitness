@@ -12,9 +12,9 @@ export function getDailyReminderValue(){
 export function getMetricMetaInfo (metric) {
   const info = {
     run: {
-      displayName: 'Run',
+      displayName: 'Corrida',
       max: 50,
-      unit: 'miles',
+      unit: 'milhas',
       step: 1,
       type: 'steppers',
       getIcon() {
@@ -30,9 +30,9 @@ export function getMetricMetaInfo (metric) {
       }
     },
     bike: {
-      displayName: 'Bike',
+      displayName: 'Ciclismo',
       max: 100,
-      unit: 'miles',
+      unit: 'milhas',
       step: 1,
       type: 'steppers',
       getIcon() {
@@ -48,9 +48,9 @@ export function getMetricMetaInfo (metric) {
       }
     },
     swim: {
-      displayName: 'Swim',
+      displayName: 'Natação',
       max: 9900,
-      unit: 'meters',
+      unit: 'metros',
       step: 100,
       type: 'steppers',
       getIcon() {
@@ -66,9 +66,9 @@ export function getMetricMetaInfo (metric) {
       }
     },
     sleep: {
-      displayName: 'Sleep',
+      displayName: 'Dormir',
       max: 24,
-      unit: 'hours',
+      unit: 'horas',
       step: 1,
       type: 'slider',
       getIcon() {
@@ -84,9 +84,9 @@ export function getMetricMetaInfo (metric) {
       }
     },
     eat: {
-      displayName: 'Eat',
+      displayName: 'Comer',
       max: 10,
-      unit: 'rating',
+      unit: 'avaliação',
       step: 1,
       type: 'slider',
       getIcon() {
