@@ -6,6 +6,7 @@ import UdaciStepper from './UdaciStepper'
 import DateHeader from './DateHeader'
 import { Ionicons } from '@expo/vector-icons'
 import TextButton from './TextButton'
+import { submitEntry, removeEntry } from '../utils/api'
 
 function SubmitBtn({onPress}){
   return(
@@ -32,6 +33,8 @@ export default class AddEntry extends Component {
     const entry = this.state
 
     this.setState(() => ({ run:0, bike:0, swim:0, sleep:0, eat:0 }))
+
+    submitEntry({key, entry})
   }
 
   increment = (metric) => {
@@ -65,6 +68,8 @@ export default class AddEntry extends Component {
 
   reset = () => {
     const key = timeToString()
+
+    removeEntry(key)
   }
 
   render(){
