@@ -3,6 +3,12 @@ import { View } from 'react-native'
 import { FontAwesome, MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons'
 import { black } from './colors'
 
+export function getDailyReminderValue(){
+  return{
+    today: ":wave: Não esqueça de adicionar seus dados hoje!"
+  }
+}
+
 export function getMetricMetaInfo (metric) {
   const info = {
     run: {
