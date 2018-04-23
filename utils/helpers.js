@@ -98,7 +98,7 @@ export function getMetricMetaInfo (metric) {
     eat: {
       displayName: 'Comer',
       max: 10,
-      unit: 'avaliação',
+      unit: 'nota',
       step: 1,
       type: 'slider',
       getIcon() {
